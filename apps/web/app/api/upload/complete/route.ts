@@ -17,8 +17,7 @@ export async function POST(req: Request) {
       id: jobId,
       status: 'queued',
       progress: 0,
-      updated_at: now,
-      preset: 'htdemucs',  // Demucsモデル（最も一般的）
+      updated_at: now
     };
     
     // Store melody spec and separation strength in metadata if provided
