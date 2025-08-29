@@ -32,7 +32,14 @@ export async function POST(req: Request) {
     // if (Object.keys(metadata).length > 0) insert.metadata = metadata;
     
     const { error } = await supabase.from('jobs').insert(insert);
-    if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    if (error) {
+      console.error('[jobs.insert] DB error:', { 
+        error, 
+        insert,
+        timestamp: new Date().toISOString() 
+      });
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    }
 
     // Trigger Modal separation job
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://demo2master-v2.vercel.app';
