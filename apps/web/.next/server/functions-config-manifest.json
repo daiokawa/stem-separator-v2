@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "functions": {
+    "/api/ping": {},
+    "/api/jobs/[id]": {},
+    "/api/upload/complete": {},
+    "/api/webhooks/modal": {},
+    "/api/upload/presign": {},
+    "/": {}
+  }
+}

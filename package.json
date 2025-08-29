@@ -1,0 +1,29 @@
+{
+  "name": "stem-separator-v2",
+  "version": "2.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "start": "turbo start",
+    "lint": "turbo lint",
+    "dev:server": "npm run dev -w @stem/server",
+    "dev:web": "npm run dev -w @stem/web",
+    "build:server": "npm run build -w @stem/server",
+    "build:web": "npm run build -w @stem/web",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

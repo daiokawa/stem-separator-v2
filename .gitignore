@@ -1,0 +1,10 @@
+node_modules
+.DS_Store
+dist
+.turbo
+.env
+apps/*/.env
+apps/*/dist
+packages/*/dist
+
+.vercel
