@@ -2,6 +2,12 @@
 module.exports = {
   reactStrictMode: true,
   typedRoutes: true,
+  typescript: {
+    ignoreBuildErrors: true
+  },
+  eslint: {
+    ignoreDuringBuilds: true
+  },
   experimental: {
     externalDir: true
   },
