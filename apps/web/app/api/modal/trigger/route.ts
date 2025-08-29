@@ -14,7 +14,7 @@ export async function POST(req: Request) {
     }
     
     // Webhook URL（Modal→Vercel）
-    const webhookUrl = `${process.env.NEXT_PUBLIC_BASE_URL || 'https://web-o3xx01q55-daiokawas-projects.vercel.app'}/api/webhooks/modal`;
+    const webhookUrl = `${process.env.NEXT_PUBLIC_BASE_URL || 'https://demo2master-v2.vercel.app'}/api/webhooks/modal`;
     
     // Modal関数を呼び出す
     // 注: Modal SDKがない場合は、Modal CLIまたはHTTP APIを使用

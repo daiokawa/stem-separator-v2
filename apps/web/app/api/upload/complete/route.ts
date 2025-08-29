@@ -36,7 +36,7 @@ export async function POST(req: Request) {
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
 
     // Trigger Modal separation job
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://web-o3xx01q55-daiokawas-projects.vercel.app';
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://demo2master-v2.vercel.app';
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
     
     // ファイルの完全URLを構築
